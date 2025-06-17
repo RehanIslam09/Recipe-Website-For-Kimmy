@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&family=Inter:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #fff9f5;
+  color: #5a4a42;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  height: 80px;
+  background-color: #fff0ea;
+  box-shadow: 0px 4px 8px rgba(231, 179, 166, 0.3);
+}
+
+header > img {
+  width: 69px;
+}
+
+header > h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  color: #b25d5d;
+  text-shadow: 1px 1px 3px rgba(255, 192, 203, 0.3);
+}
+
+main {
+  padding: 30px 30px 10px;
+}
+
+.add-ingredient-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 40px;
+}
+
+.add-ingredient-form > input {
+  border-radius: 10px;
+  border: 1px solid #eccdcd;
+  padding: 10px 14px;
+  box-shadow: 0px 2px 4px rgba(228, 185, 172, 0.2);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+  font-size: 0.95rem;
+  background: #fffdfd;
+}
+
+.add-ingredient-form > input:focus {
+  outline: none;
+  border-color: #f7b4c7;
+  box-shadow: 0 0 0 3px rgba(247, 180, 199, 0.4); /* soft pink glow */
+  transition: all 0.3s ease;
+}
+
+.add-ingredient-form > button {
+  font-family: "Inter", sans-serif;
+  border-radius: 8px;
+  border: none;
+  background-color: #e7a29e;
+  color: #fff9f9;
+  width: 150px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-ingredient-form > button:hover {
+  background-color: #d88b87;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 192, 203, 0.4);
+}
+
+.add-ingredient-form > button::before {
+  content: "+";
+  margin-right: 5px;
+}
+
+ul.ingredients-list {
+  margin-bottom: 48px;
+  padding-left: 20px;
+}
+
+ul.ingredients-list > li {
+  color: #7b5550;
+  line-height: 28px;
+  font-size: 1rem;
+}
+
+.get-recipe-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: #ffeae4;
+  padding: 12px 30px;
+  box-shadow: 0px 2px 6px rgba(226, 180, 168, 0.2);
+}
+
+.get-recipe-container h3 {
+  transition: all 0.3s ease;
+  color: #b04a68;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.4rem;
+}
+
+.get-recipe-container p {
+  color: #a47676;
+  font-size: 0.9rem;
+}
+
+.get-recipe-container button {
+  border: none;
+  border-radius: 8px;
+  background: #e89178;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff5f0;
+  padding: 10px 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-recipe-container button:hover {
+  background-color: #d97561;
+}
+
+.suggested-recipe-container {
+  background-color: #fff1f0; /* soft blush pink */
+  border-radius: 16px;
+  padding: 28px;
+  font-family: "Merriweather", serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  color: #5a2a2a; /* romantic rosewood */
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.suggested-recipe-container h3,
+.suggested-recipe-container h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #8b3e46;
+  margin-top: 20px;
+}
+
+.suggested-recipe-container p {
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.suggested-recipe-container ul,
+.suggested-recipe-container ol {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.suggested-recipe-container ul li,
+.suggested-recipe-container ol li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  list-style-type: "💕 ";
+}
+
+/* Add soft animation */
+button:hover,
+input:focus {
+  transform: scale(1.02);
+}
+
+.app-footer {
+  background-color: #fff5f2;
+  color: #8b3e46;
+  text-align: center;
+  padding: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  border-top: 2px solid #fddede;
+  margin-top: 30px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.app-footer strong {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.2rem;
+  color: #b93f4d;
+}
+
+.app-footer .small-line {
+  font-size: 0.9rem;
+  color: #a2646f;
+  margin-top: 4px;
+}
+
+.saved-recipe h3,
+.saved-recipe h4 {
+  font-family: "Playfair Display", serif;
+  color: #7a2e3a;
+}
+
+.saved-recipe p,
+.saved-recipe li {
+  color: #5a2a2a;
+  line-height: 1.6;
+}
